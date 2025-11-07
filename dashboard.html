@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="squelette.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <main id="main" class="corps">
+
+    <!-- Fenêtre modale -->
+    <div id="popup" class="overlay">
+      <div class="popup">
+        <div class="header">
+          <div class="mp">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Mon Profil</p>
+          </div>
+          <div>
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <hr>
+
+          <div class="lui">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="cp">
+            <button>Changer la photo</button>
+          </div>
+
+          <div class="np_1">
+            <div class="n">
+              <label>Nom:</label>
+              <input type="text" placeholder="Administrateur">
+            </div>
+            <div class="p">
+              <label>Prénom:</label>
+              <input type="text" placeholder="Jean">
+            </div>
+          </div>
+
+          <div class="np_2">
+            <div class="e">
+              <label>Email:</label>
+              <input type="text" placeholder="Admin@dashboard.com">
+            </div>
+            <div class="t">
+              <label>Téléphone:</label>
+              <input type="text" placeholder="+33 6 12 34 56 78">
+            </div>
+          </div>
+
+          <div class="np_3">
+            <label>Rôle:</label>
+            <input type="text" placeholder="Gestionnaire">
+            <label>Dernière connexion:</label>
+            <input type="text" placeholder="15 Janvier 2024 à 14:30">
+          </div>
+
+          <hr>
+
+          <div class="maj">
+            <button class="fermer">Fermer</button>
+            <button class="sauve">Sauvegarder</button>
+          </div>
+        </div> <!-- .header -->
+      </div> <!-- .popup -->
+    </div> <!-- .overlay -->
+
+    <!-- Sidebar -->
+    <section class="side_bar">
+      <div id="bar" class="bar">
+        <div>
+          <div class="logo">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Dashboard</p>
+          </div>
+
+          <div class="menu_list">
+            <a href="dashboard.html"><div class="tableau">
+              <i class="fa-solid fa-gauge-high"></i>
+              <p>Tableau de Bord</p>
+            </div></a>
+            <a href="analytics.html"><div class="analytics">
+              <i class="fa-solid fa-chart-line"></i>
+              <p>Analytics</p>
+            </div></a>
+            <a href="commandes.html"><div class="commandes">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Commandes</p>
+            </div></a>
+            <a href="parametres.html"><div class="parametres">
+              <i class="fa-solid fa-gears"></i>
+              <p>Paramètres</p>
+            </div></a>
+            <a href="rapports.html"><div class="rapport">
+              <i class="fa-solid fa-chart-bar"></i>
+              <p>Rapports</p>
+            </div></a>
+            <a href="notifications.html"><div class="notifications">
+              <i class="fa-solid fa-bell"></i>
+              <p>Notifications</p>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="bas">
+          <div class="admin">
+            <div class="icon_user">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="identite">
+              <h3>Administrateur</h3>
+              <p>Gestionnaire</p>
+            </div>
+          </div>
+
+          <a href="#popup" class="open-btn">
+            <div class="profile">
+              <i class="fa-solid fa-circle-user"></i>
+              <p>Mon Profil</p>
+            </div>
+          </a>
+
+          <a href="index.html">
+            <div class="deconect">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <p>Déconnexion</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav_bar">
+        <div class="gestion">
+          <label for="menu-toggle" class="menu-icon">
+            <a href="#main">&#9776;</a>
+            <input type="checkbox" id="menu-toggle">
+          </label>
+          <h2>Gestion de Stock - Produits Électroniques</h2>
+        </div>
+
+        <div class="cloche">
+          <div class="trois">
+            <i class="fa-solid fa-bell"></i>
+            <div class="not">
+              <p>3</p>
+            </div>
+          </div>
+
+          <div class="moi">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Administrateur</p>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="page_content">
+      <!-- contenu principal ici -->
+
+      <div class="title">
+        <h1>Tableau de Bord Principal</h1>
+        <p>Gestion des stocks de produits electroniques</p>
+      </div>
+      <div class="icon_div">
+        <div class="produits ">
+            <div class="icon bleu">
+                <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div>
+                <h1>1,234</h1>
+                <p>Produits en Stock</p>
+            </div>
+        </div>
+        <div class="stock">
+            <div class="icon orange">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div>
+                <h1>23</h1>
+                <p>Stock Faible</p>
+            </div>
+        </div>
+        <div class="valeur">
+            <div class="icon vert">
+                <i class="fa-solid fa-euro-sign"></i>
+            </div>
+            <div>
+                <h1>&euro; 45,678</h1>
+                <p>Valeur Totale</p>
+            </div>
+        </div>
+        <div class="attente">
+            <div class="icon gris">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+                <h1>12</h1>
+                <p>Commandes en Attente</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

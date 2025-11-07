@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.corps{
+    display: flex;
+    width: 100vw;
+}
+.bar{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #1e293b;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    /* transition: 1s; */
+    min-height: 100vh;
+    width: 20%; 
+
+    /* width: clamp(180px, 20vw, 300px); */
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+.bas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 25%;
+}
+.logo{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 40px;
+    gap: 10px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+.logo i{
+    color:#2563eb ;
+}
+.tableau, .analytics, .commandes, .parametres, .rapport, .notifications{
+    display: flex;
+    gap: 10px;
+    /* margin-top: 20px; */
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    /* background-color: aqua; */
+}
+.tableau:hover, .analytics:hover, .commandes:hover, .parametres:hover, .rapport:hover{
+    background-color: grey;
+}
+/* .tableau{
+    background-color: #2563eb;
+} */
+.admin{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    /* margin-top: 30px; */
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    gap: 10px;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    /* font-weight: bold; */
+}
+.icon_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #2563eb;
+}
+.icon_user i{
+    font-size: 25px;
+}
+.identite{
+    line-height: 25px;
+}
+.identite h3{
+    font-weight: bold;
+}
+.profile, .deconect{
+    display: flex;
+    background-color: darkgrey;
+    margin: 0 auto;
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+    font-weight: bold;
+}
+.deconect{
+    background-color: #ef4444
+}
+ a{
+    text-decoration: none;
+}
+.menu{
+    /* background-color: #2563eb; */
+    width: 80%;
+}
+.nav_bar{
+    position: fixed;
+    top: 0;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;
+    padding: 30px;
+    z-index: 100;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.cloche{
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+}
+.moi{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.moi i{
+    font-size: 30px;
+}
+.gestion{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.gestion h2{
+    font-size: 30px;
+}
+.not{
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #ef4444;
+}
+.not p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.trois{
+    position: relative;
+    display: flex;
+}
+.trois i{
+    right: 0;
+    font-size: 30px;
+    top: 0;
+    position: absolute;
+}
+/* ----------popup----------- */
+
+/* Bouton */
+/* .open-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+} */
+.open-btn:hover {
+  /* background-color: #1e40af; */
+  transform: scale(1.05);
+}
+
+/* Arrière-plan flou (overlay) */
+.overlay {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+   backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px); */
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  /* filter: blur(4px); */
+}
+
+/* Quand la fenêtre est ciblée (clic sur le lien) */
+
+.overlay:target{
+  display: flex;
+}
+/* Fenêtre (popup) */
+.popup {
+    display: flex;
+    flex-direction: column;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 37%;
+  height: 80%;
+  gap: 10px;
+  overflow-y: auto;
+  /* text-align: center; */
+  position: relative;
+  animation: show 0.3s ease-out;
+}
+
+/* Animation d'apparition */
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bouton de fermeture */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #333;
+}
+.close:hover {
+  color: red;
+}
+
+.header{
+     margin-bottom: 30px;
+}
+.mp{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    /* margin-bottom: 20px; */
+}
+.lui{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    margin: 0 auto;
+    width: 12%;
+    height: 12%;
+    border-radius: 500px;
+    background-color: #2563eb;
+    color: #fff;
+    margin-top: 10px;
+}
+.lui i{
+    font-size: 35px;
+}
+.cp button{
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+    width: 25%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: grey solid 1px;
+    background-color: #fff;
+    margin-bottom: 50px; 
+    cursor: pointer;
+}
+label{
+    font-size: 18px;
+}
+.np_1, .np_2{
+    display: flex;
+    gap: 20px;
+}
+.np_3, .n, .p, .e, .t{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+input{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    border: solid grey 0.5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input::placeholder{
+    opacity: 1;
+    color: black;
+}
+.maj{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.maj button{
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    border: solid grey 1px;
+    cursor: pointer;
+    /* color: #fff; */
+}
+.sauve{
+    color: #fff;
+    background-color: #2563eb;
+}
+.fermer{
+    background-color: #fff;
+}
+/* Icône hamburger */
+.nav_bar .menu-icon {
+    display: none;
+    /* position: absolute; */
+    font-size: 50px;
+    /* margin-left: 100px; */
+    color: black;
+    cursor: pointer;
+}
+#menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .nav_bar{
+    position: fixed;
+    top: 0;
+    left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #1e293b;
+    min-height: 100vh;
+    width: 25%; 
+}
+
+.gestion h2{
+    font-size: 20px;
+    }
+
+     .popup{
+        width: 70%;
+    }
+    .np_1, .np_2{
+    display: flex;
+    flex-direction: column;
+    }
+    .cp button{
+        width: 40%;
+    }
+    .header{
+        margin-bottom: 20px;
+    }
+    .lui{
+        width: 7%;
+        padding: 25px;
+    }
+    .cp{
+        margin-top: 20px;
+    }
+
+     .cloche{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+.moi{
+
+    font-size: 20px;
+}
+.moi i{
+    font-size: 25px;
+}
+.moi p{
+    padding-right: 20px;
+}
+.trois i{
+    font-size: 25px;
+}
+.not{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+.bas{
+    margin-bottom: 40px;
+}
+}
+@media screen and (max-width: 768px) {
+
+    .nav_bar .menu-icon {
+        display: flex;
+    }
+     /* 🧱 Mode responsive  */
+    .bar {
+        /* position: absolute; */
+        left: 0;
+        /* background-color: #333; */
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        z-index: 300;
+    }
+
+    /* Quand la checkbox est cochée, on affiche le menu */
+    /* #menu-toggle:checked+.menu-icon+.bar {
+        display: flex;
+    } */
+
+    /* On affiche l’icône hamburger */
+    
+    .nav_bar{
+        /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    
+    }
+    
+   
+#main:target .side_bar .bar{
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    height: 100vh;
+    /* transform: translateX(20%); */
+}
+}
