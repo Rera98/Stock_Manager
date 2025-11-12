@@ -177,8 +177,8 @@
                 <p>Produits en Stock</p>
             </div>
         </div>
-        <div class="stock">
-            <div class="icon orange">
+        <div class="stocks">
+            <div class="icon orang">
                 <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
             <div>
@@ -214,145 +214,71 @@
             <button class="b_2"><i class="fa-solid fa-download"></i> Exporter</button>
           </div>
         </div>
-        <div class="titl">
-          <div>ID</div>
-          <div>PRODUIT</div>
-          <div>CATEGORIE</div>
-          <div>STOCK</div>
-          <div>PRIX</div>
-          <div>STATUT</div>
-          <div>ACTIONS</div>
-        </div>
-        <div class="first">
-          <div>#001</div>
-          <div class="ordi">
-            <div class="ordi_v">
-             <i class="fa-solid fa-laptop"></i>
-            </div>
-            <div>
-              <p>MacBook Pro 16"</p>
-              <p class="leger">Apple - M3 Pro</p>
-            </div>
-          </div>
-          <div>
-            <div class="bla">Laptop</div>
-          </div>
-          <div>
-            <div class="tsanwa">15</div>
-          </div>
-          <div>&euro;2,899</div>
-          <div>
-            <div class="tsanwa">Actif</div>
-          </div>
-          <div class="poub">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
-        <div class="first">
-          <div>#002</div>
-          <div class="ordi">
-            <div class="ordi_v">
-             <i class="fa-solid fa-mobile-screen-button"></i>
-            </div>
-            <div>
-              <p>Iphone 15 Pro</p>
-              <p class="leger">Apple - 128GB</p>
-            </div>
-          </div>
-          <div>
-            <div class="tsanwa_2">Smartphone</div>
-          </div>
-          <div>
-            <div class="ja_2">8</div>
-          </div>
-          <div>&euro;1,199</div>
-          <div>
-            <div class="tsanwa">Actif</div>
-          </div>
-          <div class="poub">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
-        <div class="first">
-          <div>#003</div>
-          <div class="ordi">
-            <div class="ordi_v">
-             <i class="fa-solid fa-headphones"></i>
-            </div>
-            <div>
-              <p>AirPods Pro 2</p>
-              <p class="leger">Apple - USB-C</p>
-            </div>
-          </div>
-          <div>
-            <div class="ja">Audio</div>
-          </div>
-          <div>
-            <div class="jawour">3</div>
-          </div>
-          <div>&euro;279</div>
-          <div>
-            <div class="ja">Stock faible</div>
-          </div>
-          <div class="poub">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
-        <div class="first">
-          <div>#004</div>
-          <div class="ordi">
-            <div class="ordi_v">
-             <i class="fa-solid fa-tablet-screen-button"></i>
-            </div>
-            <div>
-              <p>Ipad Air</p>
-              <p class="leger">Apple - 64GB</p>
-            </div>
-          </div>
-          <div>
-            <div class="bla">Tablette</div>
-          </div>
-          <div>
-            <div class="tsanwa">22</div>
-          </div>
-          <div>&euro;649</div>
-          <div>
-            <div class="tsanwa">Actif</div>
-          </div>
-          <div class="poub">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
-        <div class="first">
-          <div>#005</div>
-          <div class="ordi">
-            <div class="ordi_v">
-             <i class="fa-solid fa-tv"></i>
-            </div>
-            <div>
-              <p>Apple TV 4K</p>
-              <p class="leger">128G - WiFi</p>
-            </div>
-          </div>
-          <div>
-            <div class="jawour">TV</div>
-          </div>
-          <div>
-            <div class="ja_2">12</div>
-          </div>
-          <div>&euro;179</div>
-          <div>
-            <div class="tsanwa">Actif</div>
-          </div>
-          <div class="poub">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
+        
+         <table class="stock-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>PRODUIT</th>
+          <th>CATÉGORIE</th>
+          <th>STOCK</th>
+          <th>PRIX</th>
+          <th>STATUT</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#001</td>
+          <td><div class="product"><i class="fa-solid fa-laptop"></i><div><strong>MacBook Pro 16"</strong><br><span>Apple - M3 Pro</span></div></div></td>
+          <td><span class="badge blue">LAPTOP</span></td>
+          <td><span class="stock green">15</span></td>
+          <td>€2,899</td>
+          <td><span class="status green-bg">Actif</span></td>
+          <td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td>
+        </tr>
+
+        <tr>
+          <td>#002</td>
+          <td><div class="product"><i class="fa-solid fa-mobile-screen"></i><div><strong>iPhone 15 Pro</strong><br><span>Apple - 128GB</span></div></div></td>
+          <td><span class="badge green">SMARTPHONE</span></td>
+          <td><span class="stock orange">8</span></td>
+          <td>€1,199</td>
+          <td><span class="status green-bg">Actif</span></td>
+          <td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td>
+        </tr>
+
+        <tr>
+          <td>#003</td>
+          <td><div class="product"><i class="fa-solid fa-headphones"></i><div><strong>AirPods Pro 2</strong><br><span>Apple - USB-C</span></div></div></td>
+          <td><span class="badge yellow">AUDIO</span></td>
+          <td><span class="stock red">3</span></td>
+          <td>€279</td>
+          <td><span class="status yellow-bg">Stock Faible</span></td>
+          <td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td>
+        </tr>
+
+        <tr>
+          <td>#004</td>
+          <td><div class="product"><i class="fa-solid fa-tablet-screen-button"></i><div><strong>iPad Air</strong><br><span>Apple - 64GB</span></div></div></td>
+          <td><span class="badge purple">TABLETTE</span></td>
+          <td><span class="stock green">22</span></td>
+          <td>€649</td>
+          <td><span class="status green-bg">Actif</span></td>
+          <td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td>
+        </tr>
+
+        <tr>
+          <td>#005</td>
+          <td><div class="product"><i class="fa-solid fa-tv"></i><div><strong>Apple TV 4K</strong><br><span>128GB - WiFi</span></div></div></td>
+          <td><span class="badge pink">TV</span></td>
+          <td><span class="stock orange">12</span></td>
+          <td>€179</td>
+          <td><span class="status green-bg">Actif</span></td>
+          <td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td>
+        </tr>
+      </tbody>
+    </table>
       </div>
     </section>
   </main>
