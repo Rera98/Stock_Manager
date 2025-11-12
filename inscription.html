@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inscription.css">
-    <title>Connexion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inscription.css">
+  <title>Inscription</title>
 </head>
 <body>
-    <section class="main">
-        <div class="white_part">
-            <h1>S'inscrire à StockManager</h1>
-            <h1>Dashboard</h1>
-            <div class="informations">
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Prénom">
-                <input type="password" placeholder="Mot de passe">
-                <input type="password" placeholder="Confirmer le mot de passe">
-                <button onclick="window.location.href='index.html'">S'inscrire</button>
-            </div>
-        </div>
-        <div class="blue_part">
-            <div class="logo">
-                <p>SM</p>
-            </div>
-            <div class="name">
-                <h2>Bienvenue dans</h2>
-                <h2>StockManager</h2>
-                <p>Gérez vos appareils électroniques, vos entrées et vos sorties de stock facilement avec une interface claire et rapide.</p>
-            </div>
-        </div>
-    </section>
+  <section class="main">
+    <div class="white_part">
+      <h1>S'inscrire à StockManager</h1>
+      <h1>Dashboard</h1>
+
+      <!-- Formulaire d'inscription -->
+      <form class="informations" action="index.html" method="get">
+        <input 
+          type="text" 
+          name="nom" 
+          placeholder="Nom" 
+          required>
+
+        <input 
+          type="text" 
+          name="prenom" 
+          placeholder="Prénom" 
+          required>
+
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Mot de passe" 
+          required minlength="6">
+
+        <input 
+          type="password" 
+          name="confirm_password" 
+          placeholder="Confirmer le mot de passe" 
+          required minlength="6">
+
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+
+    <div class="blue_part">
+      <div class="logo">
+        <p>SM</p>
+      </div>
+      <div class="name">
+        <h2>Bienvenue dans</h2>
+        <h2>StockManager</h2>
+        <p>
+          Gérez vos appareils électroniques, vos entrées et vos sorties de stock 
+          facilement avec une interface claire et rapide.
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

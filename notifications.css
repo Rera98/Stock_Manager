@@ -277,6 +277,16 @@
     gap: 20px;
     margin-top: 25px;
 }
+.r_a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.type, .type_pe, .type_fo, .type_bu{
+    width: 100%;
+}
+
 }
 @media screen and (max-width: 768px) {
     
@@ -284,4 +294,13 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+    .ventes, .ventes1, .ventes2{
+    display: flex;
+    flex-direction: column;
+}
+.mes{
+    display: flex;
+    flex-direction: column;
+}
+
 }

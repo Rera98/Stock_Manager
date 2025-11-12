@@ -111,7 +111,6 @@
 }
 .noti:hover{
     border: solid 1px #2563eb;
-    background-color: #dce5f2;
 }
 .not_titr{
     font-size: 18px;
@@ -135,6 +134,7 @@
     border-radius: 10px;
     border: none;
     background-color: #0caeeb;
+    cursor: pointer;
 }
 .g_b{
     padding: 15px;
@@ -143,6 +143,7 @@
     border: none;
     border: solid 1px grey;
     background-color: #fff;
+    cursor: pointer;
 }
 .a_g{
     padding: 15px;
@@ -150,6 +151,7 @@
     border-radius: 10px;
     border: none;
     background-color: #e8ebf2;
+    cursor: pointer;
 }
 .bl_g{
      padding: 15px;
@@ -158,6 +160,7 @@
     border: none;
     color: #fff;
     background-color: #2563eb;
+    cursor: pointer;
 }
 .tout_noti1{
     display: flex;
