@@ -169,6 +169,126 @@
         </div>
         <p>Génération et consultation des rapports détaillés</p>
       </div>
+      <div class="r_a">
+        <div class="type">
+          <label for=""> Type de rapport:</label>
+          <select name="" id="">
+            <option value="">Rapport des ventes</option>
+            <option value="">Rapport de stock</option>
+            <option value="">Rapport financier</option>
+            <option value="">Rapport clients</option>
+          </select>
+        </div>
+        <div class="type_pe">
+          <label for=""> Période:</label>
+          <select name="" id="">
+            <option value="">Aujourd'hui</option>
+            <option value="">Cette semaine</option>
+            <option value="">Ce mois</option>
+            <option value="">Ce trimestre</option>
+            <option value="">Cette année</option>
+          </select>
+        </div>
+        <div class="type_fo">
+          <label for=""> Format:</label>
+          <select name="" id="">
+            <option value="">PDF</option>
+            <option value="">Ecxel</option>
+            <option value="">CSV</option>
+          </select>
+        </div>
+        <div class="type_bu"><button><i class="fa-solid fa-file-arrow-down"></i> Générer le rapport</button></div>
+      </div>
+
+      <div class="cards">
+        <div class="ventes">
+          <div class="vente_i"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="vente_moi"><h3>Ventes du mois</h3>
+            <div class="vente_p">
+              <div class="vente_chi">
+                <div class="dis"><p class="vente_blu">&euro;45,678</p><p class="vente_pet">Chiffres d'affaires</p></div>
+                <div class="dis"><p class="vente_blu">+12.5%</p><p class="vente_pet">vs mois dernier</p></div>
+              </div>
+              <div class="vente_bu"><button>Voir détails</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ventes">
+          <div class="vente_i"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="vente_moi"><h3>Etat du stock</h3>
+            <div class="vente_p">
+              <div class="vente_chi">
+                <div class="dis"><p class="vente_blu">&euro;1,234</p><p class="vente_pet">Articles en stock</p></div>
+                <div class="dis"><p class="vente_blu">23</p><p class="vente_pet">Stock faible</p></div>
+              </div>
+              <div class="vente_bu"><button>Voir détails</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ventes">
+          <div class="vente_i"><i class="fa-solid fa-users"></i></div>
+          <div class="vente_moi"><h3>Clients</h3>
+            <div class="vente_p">
+              <div class="vente_chi">
+                <div class="dis"><p class="vente_blu">&euro;856</p><p class="vente_pet">Nouveaux clients</p></div>
+                <div class="dis"><p class="vente_blu">2,345</p><p class="vente_pet">Total clients</p></div>
+              </div>
+              <div class="vente_bu"><button>Voir détails</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="histo">
+        <div class="his">
+          <div><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div>Historique des rapports</div>
+        </div>
+        <div class="grider">
+          <div class="tigri">
+            <div>Nom du rapport</div>
+            <div>Type</div>
+            <div>Date de génération</div>
+            <div>Statut</div>
+            <div>Actions</div>
+          </div>
+          <div class="co_rap">
+            <div class="co_i">
+              <div><i class="fa-solid fa-file"></i></div>
+              <div>Rapports_ventes_janvier_2024.pdf</div>
+            </div>
+            <div>Ventes</div>
+            <div>15 Jan 2024</div>
+            <div class="ec">Terminé</div>
+            <div class="ii"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-download"></i></div>
+          </div>
+
+          <div class="co_rap">
+            <div class="co_i">
+              <div><i class="fa-solid fa-file-excel"></i></div>
+              <div>Stock_inventaire_janvier_2024.xlsx</div>
+            </div>
+            <div>Stock</div>
+            <div>14 Jan 2024</div>
+            <div class="ec">Terminé</div>
+            <div class="ii"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-download"></i></div>
+          </div>
+
+          <div class="co_rap">
+            <div class="co_i">
+              <div><i class="fa-solid fa-spinner"></i></div>
+              <div>Rapports_financier_trimestre.xlsx</div>
+            </div>
+            <div>Financier</div>
+            <div>En cours...</div>
+            <div class="ec">En cours</div>
+            <div class="ii"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 </body>

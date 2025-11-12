@@ -56,17 +56,237 @@
     font-size: 40px;
 }
 .bleu{
-    background-color: #2563eb;
+    background-color: #2762e5;
 }
 .orange{
-    background-color: orange;
+    background-color: #e69106;
 }
 .vert{
-    background-color: green;
+    background-color: #08b582;
 }
 .rouge{
-    background-color: red;
+    background-color: #e73838;
 }
+.info{
+    line-height: 30px;
+}
+.percent{
+    background-color: #e0fceb;
+    text-align: center;
+    width: 60%;
+    /* padding:5px; */
+    border-radius: 5px;
+}
+.r{
+    background-color: #ffe5e9;
+}
+.diagramme{
+    background-color: #f9fafc; 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+}
+.select{
+    background-color: #e8ebf2;
+    padding: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chart, .coupe{
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    
+}
+.jour select{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.batonets, .mois, .prix{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    
+}
+.baton:hover{
+    transform: translateY(-10px);
+}
+.prix{
+    color: #2563eb;
+}
+.mois{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.batonets{
+    align-items: end;
+    bottom: 50px;
+}
+.graph{
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.baton{
+    background: linear-gradient(40deg, #3176f0, #61a5f9); ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.one{
+    height: 20px;
+    display: flex;
+    align-items:flex-end;
+}
+.two{
+    height: 50px;
+}
+.tree{
+    height: 40px;
+}
+.four{
+    height: 100px;
+}
+.five, .seven{
+    height: 80px;
+}
+.six{
+    height: 110px;
+}
+.eight, .eleven{
+    height: 200px;
+}
+.nine{
+    height: 180px;
+}
+.ten{
+    height: 160px;
+}
+.twelve{
+    height: 190px;
+}
+.jan, .kudi{
+    display: flex;
+    justify-content: center;
+}
+.point{
+    display: flex;
+    gap: 20px;
+    background-color: #e8ebf2;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.v, .o{
+    display: flex;
+    /* background-color: brown; */
+    gap: 10px;
+}
+.bleue{
+   
+    background-color: #2762e5;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+.verts{
+   
+    background-color: #08b582;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+.repartition{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 20px;
+}
+.tete{
+    display: flex;
+    background-color: #e8ebf2;
+    padding: 20px;
+    font-size: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ecri{
+    color: #2762e5;
+}
+.corpse{
+    padding: 10px;
+    font-size: 18px;
+}
+.smart, .pourcent, .tablette, .acc, .lap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.roua{
+    background-color: #e8ebf2;
+    width: 90%;
+    height: 6px;
+    border-radius: 4px;
+}
+.tab{
+    margin-top: 40px;
+    /* background-color: antiquewhite; */
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.titr{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    background-color: #e8ebf2;
+    padding: 20px;
+}
+.i_i{
+    display: flex;
+    gap: 10px;
+}
+.iphone, .mac, .air{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    padding: 20px;
+    border: solid 0.5px grey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.no{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    /* background-color: green; */
+}
+.no1{
+    background-color: #f5a90d;
+}
+.no2{
+    background-color: #767e8d;
+}
+.no3{
+    background-color: #db8307;
+}
+
+
 
 @media screen and (max-width: 1024px) {
     
@@ -82,6 +302,10 @@
     gap: 20px;
     margin-top: 25px;
 }
+ .diagramme{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width: 768px) {
     
@@ -89,4 +313,5 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+   
 }

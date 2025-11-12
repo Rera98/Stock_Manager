@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+     background-color: #f9fafc;
+}
 .corps{
     display: flex;
     width: 100vw;
@@ -61,8 +63,8 @@
     text-decoration: none;
     /* background-color: aqua; */
 }
-.tableau:hover, .analytics:hover, .commandes:hover, .parametres:hover, .rapport:hover{
-    background-color: grey;
+.tableau:hover, .analytics:hover, .commandes:hover, .parametres:hover, .rapport:hover, .notifications:hover{
+    background-color: #3a4a61;
 }
 /* .tableau{
     background-color: #2563eb;
@@ -73,7 +75,7 @@
     width: 75%;
     /* margin-top: 30px; */
     padding: 20px;
-    background-color: grey;
+    background-color: #2e3c50;
     border-radius: 10px;
     gap: 10px;
     color: #fff;
@@ -100,7 +102,7 @@
 }
 .profile, .deconect{
     display: flex;
-    background-color: darkgrey;
+    background-color: #3d4759;
     margin: 0 auto;
     width: 75%;
     padding: 20px;
@@ -113,7 +115,7 @@
     font-weight: bold;
 }
 .deconect{
-    background-color: #ef4444
+    background-color: #523647
 }
  a{
     text-decoration: none;
@@ -318,7 +320,7 @@ label{
     width: 100%;
 }
 
-input{
+.n input, .e input, .p input, .t input, .np_3 input{
     padding: 15px;
     border-radius: 10px;
     border: none;
@@ -326,7 +328,7 @@ input{
     font-size: 20px;
     margin-bottom: 10px;
 }
-input::placeholder{
+.n input::placeholder, .e input::placeholder, .p input::placeholder, .t input::placeholder, .np_3 input::placeholder{
     opacity: 1;
     color: black;
 }

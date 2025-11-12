@@ -55,17 +55,213 @@
     font-size: 40px;
 }
 .bleu{
-    background-color: #2563eb;
+    background-color: #2762e5;
 }
 .rouge{
-    background-color: red;
+    background-color: #e73838;
 }
 .vert{
-    background-color: green;
+    background-color: #08b582;
 }
 .gris{
-    background-color: grey;
+    background-color: #657389;
 }
+.r_a{
+    display: flex;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+     padding: 30px;
+     border-radius: 10px;
+     margin-top: 30px;
+     align-items: flex-end;
+     /* margin-leftt: 10px; */
+     /* gap: 10px; */
+}
+.type, .type_pe, .type_fo, .type_bu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    /* font-size: 18px; */
+}
+.type select, .type_pe select, .type_fo select, .type_bu button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+}
+.type_bu button{
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.ventes{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+     border-radius: 10px;
+     margin-top: 50px;
+     align-items: center;
+     border-left: solid 6px #f14e50;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ventes1{
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+     border-radius: 10px;
+     margin-top: 50px;
+     align-items: center;
+     border-left: solid 6px #2762e5;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ventes2{
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+     border-radius: 10px;
+     margin-top: 50px;
+     align-items: center;
+     /* border-left: solid 6px blue; */
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vente_i{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #f14e50;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.vente_c{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #468df8;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vente_d{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #5fd4b1;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vente_e{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #a2a6b2;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vente_f{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #f9c062;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vente_c i, .vente_d i, .vente_e i, .vente_f i{
+     font-size: 30px;
+     color: #2762e5;
+}
+.vente_i i{
+     font-size: 30px;
+     color: #2762e5;
+     
+}
+.vente_moi{
+    width: 100%;
+}
+.vente_moi h3{
+    font-size: 25px;
+}
+.vente_bu{
+    margin-top: 15px;
+}
+.vente_bu button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.vente_pet{
+    color: grey;
+}
+.mes{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;  
+}
+.vente_bu .voir{
+    background-color: #2762e5;
+    color: #fff;
+}
+.vente_bu .voir1{
+    background-color: #5ec7f1;
+    color: #fff;
+    border: none;
+}
+
+.vente_bu .voir3{
+    background-color: #e8ebf2;
+    border: none;
+}
+.fouter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+     /* font-size: 20px; */
+}
+.chec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+.chec_bu button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.chec_bu .but{
+    background-color: #e8ebf2;
+    border: none;
+}
+.chec_bu .bu{
+   
+    border: solid 0.5px grey;
+}
+
 
 @media screen and (max-width: 1024px) {
     
