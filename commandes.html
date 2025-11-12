@@ -93,8 +93,8 @@
       <div class="popup">
         <div class="header">
           <div class="mp">
-            <i class="fa-solid fa-circle-user"></i>
-            <p>Mon Profil</p>
+            <i class="fa-solid fa-eye"></i>
+            <p>Détails de la commande</p>
           </div>
           <div>
             <a href="#" class="close">&times;</a>
@@ -102,47 +102,77 @@
 
           <hr>
 
-          <div class="lui">
-            <i class="fa-solid fa-user"></i>
+          <div class="lui_1">
+            <p>Informations commande</p>
           </div>
-          <div class="cp">
-            <button>Changer la photo</button>
-          </div>
-
-          <div class="np_1">
-            <div class="n">
-              <label>Nom:</label>
-              <input type="text" placeholder="Administrateur">
+          <div class="section1">
+            <div class="sous_sec">
+              <div class="inf">
+                <p class="fond_gri">Numero de commande:</p>
+                <p>Commande #CMD-2024-001</p>
+              </div>
+              <div class="inf_b">
+                <p class="fond_gri">Statut:</p>
+                <p>En attente</p>
+              </div>
             </div>
-            <div class="p">
-              <label>Prénom:</label>
-              <input type="text" placeholder="Jean">
-            </div>
-          </div>
-
-          <div class="np_2">
-            <div class="e">
-              <label>Email:</label>
-              <input type="text" placeholder="Admin@dashboard.com">
-            </div>
-            <div class="t">
-              <label>Téléphone:</label>
-              <input type="text" placeholder="+33 6 12 34 56 78">
+            <div class="sous_sec">
+              <div class="inf">
+                <p class="fond_gri">Date de commande:</p>
+                <p>15 Jan 2024</p>
+              </div>
+              <div class="inf_b">
+                <p class="fond_gri">Total:</p>
+                <p>&euro;1,199.00</p>
+              </div>
             </div>
           </div>
-
-          <div class="np_3">
-            <label>Rôle:</label>
-            <input type="text" placeholder="Gestionnaire">
-            <label>Dernière connexion:</label>
-            <input type="text" placeholder="15 Janvier 2024 à 14:30">
+          <div class="infos">
+            <p>Informations clients</p>
           </div>
+          <div class="section1">
+            <div class="sous_sec">
+              <div class="inf">
+                <p class="fond_gri">Nom:</p>
+                <p>Jean Dupont</p>
+              </div>
+              <div class="inf_b">
+                <p class="fond_gri">Statut:</p>
+                <p>En attente</p>
+              </div>
+            </div>
+            <div class="sous_sec">
+              <div class="inf">
+                <p class="fond_gri">Date de commande:</p>
+                <p>15 Jan 2024</p>
+              </div>
+              <div class="inf_b">
+                <p class="fond_gri">Total:</p>
+                <p>&euro;1,199.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="infos1">
+            <p>Articles commandés</p>
+          </div>
+         <div class="com_thing1">
+          <div>
+            <div class="thing"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="le_p">
+              <p class="bold">Iphone 15 Pro</p>
+              <p class="pp">128 GB - bleu</p>
+            </div>
+          </div>
+          <div class="pp">x1</div>
+          <div class="pp">&euro;1,199.00</div>
+          <div class="bluey pp">&euro;1,199.00</div>
+        </div>
 
           <hr>
 
           <div class="maj">
-            <button class="fermer">Fermer</button>
-            <button class="sauve">Sauvegarder</button>
+            <a href="#"><button class="fermer">Fermer</button></a>
+            <button class="sauve">Imprimer</button>
           </div>
         </div> <!-- .header -->
       </div> <!-- .popup -->
@@ -153,7 +183,63 @@
 
 
 
+<div id="popup_mod" class="overlay">
+      <div class="popup">
+        <div class="header">
+          <div class="mp">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <p>Modifier la commande</p>
+          </div>
+          <div>
+            <a href="#" class="close">&times;</a>
+          </div>
 
+          <hr>
+
+          <div class="lui_2">
+            <p>Statut de la commande</p>
+          </div>
+          <div class="stat">
+          <label for="stat"> Statut:</label>
+          <select name="" id="">
+            <option value="">Tous les statuts</option>
+            <option value=""> En Attente</option>
+            <option value="">En cours</option>
+            <option value="">Epédiées</option>
+            <option value="">Livrées</option>
+          </select>
+        </div>
+          <div class="lui_2">
+            <p>Informations de livraison</p>
+          </div>
+          <!-- <div class="section1"> -->
+            <div class="observation">
+              <label for="">Adresse de livraison:</label>
+              <textarea name="" id="" placeholder="123 rue de la paix, 75001 Paris"></textarea>
+            </div>
+            <div class="observation1">
+              <label for="">Date de livraison prévue:</label>
+              <input type="datetime" placeholder="20/01/2024">
+            </div>
+          <!-- </div> -->
+          <div class="lui_2">
+            <p>Notes</p>
+          </div>
+          <div class="observation">
+            <label for="">Adresse de livraison:</label>
+            <textarea name="" id="" placeholder="123 rue de la paix, 75001 Paris"></textarea>
+          </div>
+        </div>
+
+          <hr>
+
+          <div class="maj">
+            <a href="#"><button class="fermer">Annuler</button></a>
+            <button class="sauve">Sauvegarder</button>
+          </div>
+        </div> <!-- .header -->
+      </div> <!-- .popup -->
+    </div> <!-- .overlay -->
 
 
 
@@ -362,7 +448,7 @@
         </div>
         <div class="dana">
           <div><a href="#popup_voir"><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></a></div>
-          <div><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></div>
+          <div><a href="#popup_mod"><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></a></div>
           <div><button class="dana_g"><i class="fa-solid fa-check"></i> Traiter</button></div>
         </div>
       </div>
@@ -391,7 +477,7 @@
         </div>
         <div class="dana">
            <div><a href="#popup_voir"><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></a></div>
-          <div><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></div>
+          <div><a href="#popup_mod"><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></a></div>
           <div><button class="dana_g bl"><i class="fa-solid fa-truck"></i> Expédier</button></div>
         </div>
       </div>
