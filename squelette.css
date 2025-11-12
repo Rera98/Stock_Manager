@@ -10,7 +10,8 @@ body{
     display: flex;
     width: 100vw;
 }
-.bar{display: flex;
+.bar{
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
@@ -42,7 +43,7 @@ body{
 .logo{
     display: flex;
     /* flex-direction: column; */
-    padding: 40px;
+    padding: 30px;
     gap: 10px;
     color: #fff;
     font-size: 35px;
@@ -172,6 +173,11 @@ body{
     height: 25px;
     border-radius: 25px;
     background-color: #ef4444;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.2); }
 }
 .not p{
     font-size: 18px;
@@ -233,7 +239,8 @@ body{
   background: white;
   padding: 30px;
   border-radius: 15px;
-  width: 37%;
+  width: 70%;
+  max-width: 700px;
   height: 80%;
   gap: 10px;
   overflow-y: auto;
@@ -271,6 +278,7 @@ body{
      margin-bottom: 30px;
 }
 .mp{
+    padding: 20px;
     display: flex;
     gap: 10px;
     font-size: 25px;
@@ -297,7 +305,7 @@ body{
      margin: 0 auto;
      display: flex;
      justify-content: center;
-    width: 25%;
+    /* width: 25%; */
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
@@ -337,8 +345,11 @@ label{
     display: flex;
     gap: 10px;
     justify-content: end;
+    margin-top: 10px;
 }
+
 .maj button{
+    
     padding: 15px;
     font-size: 18px;
     border-radius: 10px;
@@ -398,14 +409,14 @@ label{
     font-size: 20px;
     }
 
-     .popup{
+     /* .popup{
         width: 70%;
-    }
+    } */
     .np_1, .np_2{
     display: flex;
     flex-direction: column;
     }
-    .cp button{
+    /* .cp button{
         width: 40%;
     }
     .header{
@@ -417,7 +428,7 @@ label{
     }
     .cp{
         margin-top: 20px;
-    }
+    } */
 
      .cloche{
     display: flex;
@@ -461,6 +472,9 @@ label{
         display: none;
         z-index: 300;
     }
+    .logo p{
+        font-size: 30px;
+    }
 
     /* Quand la checkbox est cochée, on affiche le menu */
     /* #menu-toggle:checked+.menu-icon+.bar {
@@ -477,7 +491,10 @@ label{
     padding: 0;
     
     }
-    
+    .lui{
+        height: 80px;
+        width: 80px;
+    }
    
 #main:target .side_bar .bar{
     display: flex;

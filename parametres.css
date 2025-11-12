@@ -109,6 +109,10 @@
     padding-top: 40px;
     align-items: center;
 }
+.noti:hover{
+    border: solid 1px #2563eb;
+    background-color: #dce5f2;
+}
 .not_titr{
     font-size: 18px;
     line-height: 40px;

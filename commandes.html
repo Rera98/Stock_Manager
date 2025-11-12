@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <title>Dashboard</title>
 </head>
+
 <body>
   <main id="main" class="corps">
 
@@ -71,6 +73,94 @@
       </div> <!-- .popup -->
     </div> <!-- .overlay -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="popup_voir" class="overlay">
+      <div class="popup">
+        <div class="header">
+          <div class="mp">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Mon Profil</p>
+          </div>
+          <div>
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <hr>
+
+          <div class="lui">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="cp">
+            <button>Changer la photo</button>
+          </div>
+
+          <div class="np_1">
+            <div class="n">
+              <label>Nom:</label>
+              <input type="text" placeholder="Administrateur">
+            </div>
+            <div class="p">
+              <label>Prénom:</label>
+              <input type="text" placeholder="Jean">
+            </div>
+          </div>
+
+          <div class="np_2">
+            <div class="e">
+              <label>Email:</label>
+              <input type="text" placeholder="Admin@dashboard.com">
+            </div>
+            <div class="t">
+              <label>Téléphone:</label>
+              <input type="text" placeholder="+33 6 12 34 56 78">
+            </div>
+          </div>
+
+          <div class="np_3">
+            <label>Rôle:</label>
+            <input type="text" placeholder="Gestionnaire">
+            <label>Dernière connexion:</label>
+            <input type="text" placeholder="15 Janvier 2024 à 14:30">
+          </div>
+
+          <hr>
+
+          <div class="maj">
+            <button class="fermer">Fermer</button>
+            <button class="sauve">Sauvegarder</button>
+          </div>
+        </div> <!-- .header -->
+      </div> <!-- .popup -->
+    </div> <!-- .overlay -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Sidebar -->
     <section class="side_bar">
       <div id="bar" class="bar">
@@ -81,30 +171,42 @@
           </div>
 
           <div class="menu_list">
-            <a href="dashboard.html"><div class="tableau">
-              <i class="fa-solid fa-gauge-high"></i>
-              <p>Tableau de Bord</p>
-            </div></a>
-            <a href="analytics.html"><div class="analytics">
-              <i class="fa-solid fa-chart-line"></i>
-              <p>Analytics</p>
-            </div></a>
-            <a href="commandes.html"><div class="commandes">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Commandes</p>
-            </div></a>
-            <a href="parametres.html"><div class="parametres">
-              <i class="fa-solid fa-gears"></i>
-              <p>Paramètres</p>
-            </div></a>
-            <a href="rapports.html"><div class="rapport">
-              <i class="fa-solid fa-chart-bar"></i>
-              <p>Rapports</p>
-            </div></a>
-            <a href="notifications.html"><div class="notifications">
-              <i class="fa-solid fa-bell"></i>
-              <p>Notifications</p>
-            </div></a>
+            <a href="dashboard.html">
+              <div class="tableau">
+                <i class="fa-solid fa-gauge-high"></i>
+                <p>Tableau de Bord</p>
+              </div>
+            </a>
+            <a href="analytics.html">
+              <div class="analytics">
+                <i class="fa-solid fa-chart-line"></i>
+                <p>Analytics</p>
+              </div>
+            </a>
+            <a href="commandes.html">
+              <div class="commandes">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Commandes</p>
+              </div>
+            </a>
+            <a href="parametres.html">
+              <div class="parametres">
+                <i class="fa-solid fa-gears"></i>
+                <p>Paramètres</p>
+              </div>
+            </a>
+            <a href="rapports.html">
+              <div class="rapport">
+                <i class="fa-solid fa-chart-bar"></i>
+                <p>Rapports</p>
+              </div>
+            </a>
+            <a href="notifications.html">
+              <div class="notifications">
+                <i class="fa-solid fa-bell"></i>
+                <p>Notifications</p>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -162,52 +264,52 @@
 
     <section class="page_content">
       <!-- contenu principal ici -->
-       <div class="title">
+      <div class="title">
         <div class="A">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <h1>Gestion des Commandes</h1>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h1>Gestion des Commandes</h1>
         </div>
         <p>Suivi et gestion complète des commandes clients</p>
       </div>
       <div class="icon_div">
         <div class="produits ">
-            <div class="icon orange">
-                <i class="fa-solid fa-clock"></i>
-            </div>
-            <div>
-                <h1>23</h1>
-                <p>En attente</p>
-            </div>
+          <div class="icon orange">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <h1>23</h1>
+            <p>En attente</p>
+          </div>
         </div>
         <div class="stock">
-            <div class="icon bleu">
-                <i class="fa-solid fa-gears"></i>
-            </div>
-            <div>
-                <h1>45</h1>
-                <p>En cours</p>
-            </div>
+          <div class="icon bleu">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <div>
+            <h1>45</h1>
+            <p>En cours</p>
+          </div>
         </div>
         <div class="valeur">
-            <div class="icon violet">
-                <i class="fa-solid fa-truck-fast"></i>
-            </div>
-            <div>
-                <h1>67</h1>
-                <p>Expédiées</p>
-            </div>
+          <div class="icon violet">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div>
+            <h1>67</h1>
+            <p>Expédiées</p>
+          </div>
         </div>
         <div class="attente">
-            <div class="icon vert">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <div>
-                <h1>234</h1>
-                <p>Livrées</p>
-            </div>
+          <div class="icon vert">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div>
+            <h1>234</h1>
+            <p>Livrées</p>
+          </div>
         </div>
       </div>
-      <div class="debut"> 
+      <div class="debut">
         <div class="stat">
           <label for="stat"> Statut:</label>
           <select name="" id="">
@@ -244,7 +346,7 @@
             <div class="j">Client: Jean Dupont</div>
             <div class="j">15 Jan 2024</div>
           </div>
-          <div class="bluey kudin" >&euro;1,199.00</div>
+          <div class="bluey kudin">&euro;1,199.00</div>
         </div>
         <div class="com_thing">
           <div>
@@ -259,7 +361,7 @@
           <div class="bluey pp">&euro;1,199.00</div>
         </div>
         <div class="dana">
-          <div><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></div>
+          <div><a href="#popup_voir"><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></a></div>
           <div><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></div>
           <div><button class="dana_g"><i class="fa-solid fa-check"></i> Traiter</button></div>
         </div>
@@ -274,7 +376,7 @@
             <div class="j">Client: Marie martin</div>
             <div class="j">14 Jan 2024</div>
           </div>
-          <div class="bluey kudin" >&euro;2,899.00</div>
+          <div class="bluey kudin">&euro;2,899.00</div>
         </div>
         <div class="com_thing">
           <div>
@@ -288,7 +390,7 @@
           <div class="bluey pp">&euro;2,899.00</div>
         </div>
         <div class="dana">
-          <div><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></div>
+           <div><a href="#popup_voir"><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></a></div>
           <div><button class="dana_fari"><i class="fa-solid fa-pen-to-square"></i> Modifier</button></div>
           <div><button class="dana_g bl"><i class="fa-solid fa-truck"></i> Expédier</button></div>
         </div>
@@ -303,10 +405,10 @@
             <div class="j">Client: Pierre Durand</div>
             <div class="j">13 Jan 2024</div>
           </div>
-          <div class="bluey kudin" >&euro;558.00</div>
+          <div class="bluey kudin">&euro;558.00</div>
         </div>
         <div class="com_thing">
-          <div >
+          <div>
             <div class="thing"><i class="fa-solid fa-headphones"></i></div>
             <div class="le_p">
               <p class="bold">AirPods Pro 2</p>
@@ -317,7 +419,7 @@
           <div class="bluey pp">&euro;558.00</div>
         </div>
         <div class="dana">
-          <div><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></div>
+           <div><a href="#popup_voir"><button class="dana_bla"><i class="fa-solid fa-eye"></i> Voir détails</button></a></div>
           <div><button class="dana_fari bl"><i class="fa-solid fa-location-dot"></i> Suivre</button></div>
           <div><button class="dana_g"><i class="fa-solid fa-circle-check"></i> Marquer livrée</button></div>
         </div>
@@ -325,4 +427,5 @@
     </section>
   </main>
 </body>
+
 </html>
